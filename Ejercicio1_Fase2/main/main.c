@@ -28,11 +28,14 @@ void app_main(void)
 
 
 esp_err_t create_task(void){
+
 	struct controlador{
 			TaskHandle_t ct1;
 			TaskHandle_t ct2;
 		};
+
 	struct controlador *control =malloc(sizeof(*control));
+
 	control->ct1=NULL;
 	control->ct2=NULL;
 
